@@ -12,6 +12,7 @@ var connection = mysql.createConnection({
 });
  
 connection.connect();
+//end of Mysql connection
  
 connection.query('SELECT 1 + 1 AS answer', function (error, results, fields) {
   if (error) throw error;
